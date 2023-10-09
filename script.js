@@ -19,19 +19,25 @@ function changeCountNumber() {
   countNumber.textContent = count;
 }
 
-function decreaseCount(){
+function decreaseCount() {
   count--;
   changeCountNumber();
 }
 
-function increaseCount(){}
+function increaseCount() {
+  count++;
+  changeCountNumber();
+}
 
-function resetCount() {}
+function resetCount() {
+  count = 0;
+  changeCountNumber();
+}
 
 
 
 
 // Event Listeners
 decreaseBtn.addEventListener('click', decreaseCount);
-resetBtn.addEventListener('click', increaseCount);
-increaseBtn.addEventListener('click', resetCount);
+resetBtn.addEventListener('click', resetCount);
+increaseBtn.addEventListener('click', increaseCount);
