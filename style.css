@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 250px;
-  gap: 20px;
 }
 
 .counter-number {
@@ -24,14 +23,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: -30px;
-
-
+  margin-bottom: -40px;
 }
 
 h1 {
   font-size: 3rem;
-  margin-bottom: -10px;
+  margin-bottom: -40px;
 }
 
 h2 {
@@ -39,7 +36,7 @@ h2 {
 }
 
 button {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   background-color: aliceblue;
   color: black;
@@ -48,9 +45,18 @@ button {
   margin: 0px 10px 0px 10px;
   border: 2px solid black;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 button:hover {
   background-color: black;
   color: aliceblue;
+}
+
+.decrease:hover {
+  background-color: red;
+}
+
+.increase:hover {
+  background-color: green;
 }
