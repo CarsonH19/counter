@@ -1,12 +1,19 @@
 
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   height: 100vh;
   margin: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Roboto', sans-serif;
 }
 
 
@@ -59,4 +66,29 @@ button:hover {
 
 .increase:hover {
   background-color: green;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.fa-github {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
